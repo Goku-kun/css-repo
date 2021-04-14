@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CSS in Depth</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <style>
+            @font-face {
+                font-family: "Signika";
+                font-style: normal;
+                font-weight: 800;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/signika/v12/vEFO2_JTCgwQ5ejvMV0O96D01E8J0tJXHKbBjM4.woff2)
+                    format("woff2");
+                unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC,
+                    U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122,
+                    U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+            }
+            li:only-child {
+                color: violet;
+                font-family: Impact, Haettenschweiler, "Arial Narrow Bold",
+                    sans-serif;
+                font-size: 3em;
+            }
+            li:nth-of-type(5) {
+                color: red;
+            }
+            li:nth-of-type(2n) {
+                font-weight: bolder;
+                color: navy;
+            }
+            li:nth-of-type(2n + 3) {
+                color: brown;
+            }
+            li:first-of-type,
+            p:first-of-type {
+                font-family: "Signika", sans-serif;
+                font-size: 3.5em;
+            }
+            li:last-of-type,
+            p:last-of-type {
+                font-family: "Signika", sans-serif;
+                font-size: 5em;
+                font-weight: 800;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li>This is li 1.</li>
+            <li>This is li 2 and even.</li>
+            <li>This is li 3 and odd and starting from 3.</li>
+            <li>This is li 4 and even.</li>
+            <li>This is li 5 and odd and starting from 3.</li>
+            <li>This is li 6 and even.</li>
+            <li>This is li 7 and odd and starting from 3.</li>
+        </ul>
+        <p>This is the first and last p.</p>
+        <ul>
+            <li>This is the only child.</li>
+        </ul>
+    </body>
+</html>
